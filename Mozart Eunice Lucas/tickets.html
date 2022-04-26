@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="eunice.css">
+
+    <title>BUY TICKETS</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <style>
+        body{
+            background-color:#CCC;
+            font-family: 'Sego UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main{
+            border-radius: 10px;
+            box-shadow: 10px 10px 90px -60px rgb(9, 9, 9);
+        }
+    </style>
+
+
+  </head>
+  <body>
+        <!-- HEADER STARTS -->
+        <header class="header_section">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="container-fluid">
+                 <a class="navbar-brand" href="index.html"><img src="images/MicrosoftTeams-image.png" height="80"> </a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+                   <!-- NavBar expended list -->
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                               <!-- Item list 1 -->
+                     <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                     </li>
+                        <!-- Item list 2 -->
+                     <li class="nav-item">
+                       <a class="nav-link" href="History.html">History</a>
+                     </li>
+                        <!-- Item list 3 -->
+                     <li class="nav-item">
+                      <a class="nav-link" href="comedy.html">Comedy Club</a>
+                    </li>
+                       <!-- Item list 4 dropdown -->
+                     <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Shows & Tickets
+                       </a>
+                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <li>
+                           <a class="dropdown-item" href="timeprices.html">Time & Prices</a>
+                          </li>
+                         <li>
+                          <a class="dropdown-item" href="tickets.html">Tickets</a>
+                         </li>
+                       </ul>
+                     </li>
+                       <!-- Item list 5 -->
+                     <li class="nav-item">
+                       <a class="nav-link" href="Contact.html">Contact us.</a>
+                     </li>
+                   </ul>
+                   <form class="d-flex">
+                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                     <button class="btn btn-outline-success" type="submit">Search</button>
+                   </form>
+                 </div>
+               </div>
+             </nav>
+      </header>
+            <!-- HEADER FINISHES -->
+
+            <!-- BANNER STARTS -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <img src="images/famouscomedyclub.jpg" class="d-block w-100" alt="famouscomedyclub">           
+        </div>
+            <!-- BANNER ENDS -->
+
+             <!-- BUY TICKETS -->
+        <div class="container">
+            <div class="row justify-content-center p-5">
+                <div class="col-lg-9 main mx-2 bg-white p-4">
+                    <h1 class="text-center display-4 font-weight-normal">Tickets</h1>
+                    <div class="row mt-5">
+                         <!-- THURSDAY -->
+                        <div class="col-md-4 texxt-center">
+                            <h4>Thursday</h4>
+                            <h5>Price €10</h5>
+                            <p>Name of the Event</p>
+
+                            <button type="button" class="btn btn-outline-primary decrement_btn">
+                              <i class="fas fa-minus"></i>
+                            </button>
+
+                              <span class="max-3 thursday">0</span>
+                            
+                            <button type="button" class="btn btn-outline-primary increment_btn">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                         <!-- FRIDAY -->
+                        <div class="col-md-4 mx-auto my-md-0 texxt-center">
+                            <h4>Friday</h4>
+                            <h5>Price €15</h5>
+                            <p>Name of the Event</p>
+                            
+                            <button type="button" class="btn btn-outline-primary decrement_btn">
+                              <i class="fas fa-minus"></i>
+                            </button>
+
+                            <span class="max-3 friday">0</span>
+
+                            <button type="button" class="btn btn-outline-primary increment_btn"><i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                         <!-- SATURDAY -->
+                         <div class="col-md-4 texxt-center">
+                            <h4>Saturday</h4>
+                            <h5>Price €15</h5>
+                            <p>Name of the Event</p>
+                            <button type="button" class="btn btn-outline-primary decrement_btn"><i class="fas fa-minus"></i>
+                            </button>
+
+                            <span class="max-3 saturday">0</span>
+
+                            <button type="button" class="btn btn-outline-primary increment_btn"><i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                          <!-- SUNDAY -->
+                          <div class="col-md-4 texxt-center">
+                            <h4>Sunday</h4>
+                            <h5>Price €10</h5>
+                            <p>Name of the Event</p>
+                            <button type="button" class="btn btn-outline-primary increment_btn"><i class="fas fa-minus"></i>
+                            </button>
+
+                            <span class="max-3 sunday">0</span>
+
+                            <button type="button" class="btn btn-outline-primary decrement_btn"><i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-5 d-flex justify-content-center w100">
+                        <button type="button" class="btn btn-danger mx-2 reset">Reset</button>
+                        <button type="button" class="btn btn-success mx-2 book_now" data-toggle="modal" data-target="#myModal">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+             <!-- BUTTON -->
+        <div id="myModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-content">
+                    <h4>Collect Your Tickets</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body p-5">
+                      <div class="row">
+                          <div class="col-6 ml-4">
+                              <p class="font-weight-bold">Day Event</p>
+                              <p>Thursday</p>
+                              <p class="my-4">Friday</p>
+                              <p>Saturday</p>
+                              <p>Sunday</p>
+                              <hr>
+                              <h5>Total Amount</h5>
+                          </div>
+                          <div class="col-5 text-center">
+                              <p class="font-weight-bold">Ticket Quantity Price</p>
+                              <p><span class="quantity_thursday"><samp class="ml-5">€</samp><samp class="thursday_list"></samp></span></p>
+
+                              <p class="my-4"><span class="quantity_friday"><samp class="ml-5">€</samp><samp class="friday_list"></samp></span></p>
+
+                              <p><span class="quantity_saturday"><samp class="ml-5">€</samp><samp class="saturday_list"></samp></span></p>
+
+                              <p><span class="quantity_sunday"><samp class="ml-5">€</samp><samp class="sanday_list"></samp></span></p>
+                              <hr>
+                              <h4>€<span class="total"></span></h4>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+              <!-- BUY TICKETS -->
+              <!-- FUNCTION -->
+          <script>
+            $(document).ready(function(){
+              $(".decrement_btn").click(function(){
+                if(Number($(this).next().text()) > 0){
+                  $(this).next(Number($(this).next().text()) -1);
+                }
+              });
+              $(".increment_btn").click(function(){
+                $(this).prev().text(Number($(this).prev().text()) +1);
+                
+              });
+
+              $(".reset").click(function(){
+                $("span").each(function(){
+                  $(this).text(0);
+              });
+            });
+
+            $(".thursday_list").text(Number($(".thursday").text())*10);
+            $(".friday_list").text(Number($(".friday").text())*15);
+            $(".saturday_list").text(Number($(".saturday").text())*15);
+            $(".sunday_list").text(Number($(".sunday").text())*10);
+
+            $(".total").text(Number($(".thursday_list").text()) + Number($(".friday_list").text()) + Number($(".saturday_list").text()) + Number($(".sunday_list").text()));
+
+            $(".quantity_thursday").text($(".thursday_list"));
+            $(".quantity_friday").text($(".friday_list"));
+            $(".quantity_saturday").text($(".saturday_list"));
+            $(".quantity_sunday").text($(".sanday_list"));
+          });
+
+          </script>
+
+
+    <!-- MDB -->
+        <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com">Internationalbar.com</a>
+        </div>
+    <!-- Copyright -->
+  </body>
+</html>
